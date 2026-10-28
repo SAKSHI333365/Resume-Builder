@@ -1,0 +1,32 @@
+.button {
+    border: none;
+    outline: none;
+    padding-inline: 1.5rem;
+    padding-block: 0.75rem;
+    border-radius: 0.75rem;
+    cursor: pointer;   
+    font-weight: bold;   
+    
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    
+    &.primary-button{
+        width: 100%;
+        margin-top: 0.35rem;
+        padding-block: 0.9rem;
+        background-color: #1e513c;
+        color: #ffffff;
+    }
+    
+    &:hover {
+        background-color: #28694e;
+    }
+
+    &:disabled {
+        cursor: wait;
+        opacity: 0.7;
+    }
+    
+    &:active{
+        transform: scale(0.985);
+    }
+}
